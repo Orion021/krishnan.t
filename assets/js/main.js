@@ -27,17 +27,17 @@ function updateCounter() {
     let months = currentDate.getMonth() - startDate.getMonth();
     let days = currentDate.getDate() - startDate.getDate();
 
-    /*if (days < 0) {
+    if (days < 0) {
         months -= 1;
         days += new Date(currentDate.getFullYear(), currentDate.getMonth(), 0).getDate();
-    }*/
+    }
 
     if (months < 0) {
         years -= 1;
         months += 12;
     }
 
-    document.getElementById('counter').textContent = `${years} Year ${months} Months`;
+    document.getElementById('counter').textContent = `${years} Year ${months} Months ${days}(s)`;
 }
 
 updateCounter();

@@ -37,7 +37,7 @@ function updateCounter() {
         months += 12;
     }
 
-    document.getElementById('counter').textContent = `${years} Year ${months} Months`;
+    document.getElementById('counter').textContent = `${years} Year ${months} Months ${days} Days`;
 }
 
 updateCounter();
